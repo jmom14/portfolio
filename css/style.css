@@ -712,7 +712,7 @@ a:focus {
   gap: 25px;
 }
 
-.techonologies_box {
+.technologies_box {
   display: grid;
   grid-template-columns: repeat(5, 8fr);
   width: 800px;

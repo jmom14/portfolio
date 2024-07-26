@@ -7,6 +7,9 @@
         padding: 50px 0;
     }
 
+    .technologies_box {
+        width: 500px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -29,6 +32,10 @@
 }
 
 @media (max-width: 768px) {
+
+    .who_section>img {
+        width: 250px;
+    }
 
     .info_section .col-md-3 {
         text-align: center;
@@ -79,7 +86,13 @@
     }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .technologies_box {
+        width: 250px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
 
 @media (max-width: 420px) {
     .slider_section .detail-box h2 {
