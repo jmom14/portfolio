@@ -17,6 +17,7 @@
         rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 </head>
 
 <body>
@@ -40,17 +41,17 @@
                         <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="./"> &lt;/ Home &gt;<span
-                                            class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="#about"> &lt;/ About &gt;
+                                        <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./about"> &lt;/ About &gt;</a>
+                                    <a class="nav-link" href="#experience"> &lt;/ Experience &gt;</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./portfolio">&lt;/ Portfolio &gt;</a>
+                                    <a class="nav-link" href="#my-projects">&lt;/ My Projects &gt;</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="./contact">&lt;/ Contact &gt;</a>
+                                    <a class="nav-link" href="#contact">&lt;/ Contact &gt;</a>
                                 </li>
                             </ul>
                         </div>
@@ -81,7 +82,7 @@
                                                 specialize in Fullstack development
                                             </p>
                                             <div class="">
-                                                <a href="./portfolio">
+                                                <a href="#my-projects">
                                                     Check out my work
                                                 </a>
                                             </div>
@@ -100,46 +101,40 @@
 
     <!-- do section -->
 
-    <section class="do_section layout_padding">
+    <section id="about" class="who_section layout_padding" style="padding: 75px;">
         <div class="container">
-            <div class="heading_container">
-                <h2>
-                    Development
-                </h2>
-                <p>
-                    Experience in backend development primarily using Python (Django, FastAPI) and Node.js (Next.js,
-                    Express), as well as frontend development using JavaScript (React).
-                </p>
-            </div>
-            <div class="do_container">
-                <div class="box arrow-start arrow_bg">
+            <div class="row">
+                <div class="col-md-5">
                     <div class="img-box">
-                        <img src="images/backend.png" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6>
-                            Backend
-                        </h6>
+                        <img src="images/me.jpg" alt="">
                     </div>
                 </div>
-                <div class="box arrow-middle arrow_bg">
-                    <div class="img-box">
-                        <img src="images/frontend.png" alt="">
-                    </div>
+                <div class="col-md-7">
                     <div class="detail-box">
-                        <h6>
-                            Frontend
-                        </h6>
-                    </div>
-                </div>
-                <div class="box arrow-end arrow_bg">
-                    <div class="img-box">
-                        <img src="images/d-4.png" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h6>
-                            Fullstack
-                        </h6>
+                        <div class="heading_container">
+                            <h2>
+                                ABOUT
+                            </h2>
+                        </div>
+                        <p>
+                            Hi, I’m Jose Ortega! I specialize in full-stack development and have 6 years of experience
+                            in software
+                            development. Based in the vibrant Mexico City, I combine my love for math, technology, and
+                            problem-solving
+                            to create efficient and innovative digital solutions.
+                        </p>
+                        <p>
+
+                            When I'm not coding, you can find me traveling, playing soccer, or swimming. Staying active
+                            and exploring
+                            new places keeps me inspired and energized.
+                        </p>
+                        <p>
+
+                            Feel free to connect with me on <a href="https://www.linkedin.com/in/ortega-jose/"
+                                target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+                        </p>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -148,11 +143,11 @@
 
     <!-- end do section -->
 
-    <section class="do_section layout_padding">
+    <section id="experience" class="do_section layout_padding">
         <div class="container">
             <div class="heading_container">
                 <h2>
-                    Languages and Tools
+                    Experience
                 </h2>
                 <p>
                     As a full-stack developer with 6 years of experience across various industries and project types, I
@@ -217,16 +212,25 @@
 
 
     <!-- work section -->
-    <section class="do_section layout_padding work_section">
+    <section id="my-projects" class="do_section layout_padding work_section">
         <div class="container">
             <div class="heading_container">
                 <h2>
-                    My work
+                    My Projects
                 </h2>
             </div>
             <div class="proyect_container">
                 <div class="proyect_box">
-                    <!-- <img src="images/w-1.png" alt=""> -->
+                    <img src="images/stories-gpt.jpg" alt="">
+                    <div class="box_title">Stories GPT</div>
+                    <button class="button"
+                        onclick=" window.open('https://github.com/jmom14/stories-gpt','_blank')">Github</button>
+                </div>
+                <div class="proyect_box">
+                    <img src="images/ebook.jpg" alt="">
+                    <div class="box_title">Simple Reader</div>
+                    <button class="button"
+                        onclick=" window.open('https://github.com/jmom14/simple-reader','_blank')">Github</button>
                 </div>
                 <div class="proyect_box">
                     <!-- <img src="images/w-1.png" alt=""> -->
@@ -246,9 +250,9 @@
 
                 </div> -->
             </div>
-            <a href="./portfolio">
+            <!-- <a href="./portfolio">
                 Check out more...
-            </a>
+            </a> -->
         </div>
     </section>
 
@@ -256,7 +260,7 @@
 
     <!-- footer section -->
 
-    <section class="info_section ">
+    <section id="contact" class="info_section ">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col"></div>
